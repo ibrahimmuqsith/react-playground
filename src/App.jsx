@@ -5,6 +5,7 @@ import './App.css'
 import Stopwatch from './components/Stopwatch'
 import Header from './components/Header'
 import Home from './components/Home'
+import NavBar from './components/NavBar'
 
 function App() {
 
@@ -16,10 +17,10 @@ function App() {
         <Header />
       </section>
       <section className='w-full flex'>
-        <aside className='w-1/4'>
-          HI
+        <aside className='w-80'>
+          <NavBar />
         </aside>
-        <section className='w-3/4'>
+        <section className='w-3/4 border-2 p-2 m-5 min-h-full'>
           <Routes>
             <Route
               path='/'
