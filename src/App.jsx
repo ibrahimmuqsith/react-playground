@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './App.css'
+import Stopwatch from './components/Stopwatch'
 
 function App() {
 
@@ -9,17 +10,22 @@ function App() {
   return (
     <>
       <header>
-        <p className='text-3xl font-bold underline'>
-          HI
-        </p>
-
+        <nav>
+          {document.cookie}
+        </nav>
       </header>
-      <main></main>
-      <nav></nav>
-      <aside></aside>
-      <section className="card">
-        {document.cookie}
-      </section>
+
+      <main>
+        <aside className=''>
+
+        </aside>
+
+        <section className=''>
+          <Stopwatch />
+        </section>
+
+      </main>
+
       <footer></footer>
     </>
   )
