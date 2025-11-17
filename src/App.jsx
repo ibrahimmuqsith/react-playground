@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Stopwatch from './components/Stopwatch'
 import Header from './components/Header'
+import Home from './components/Home'
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
           <Routes>
             <Route
               path='/'
-              element={<Stopwatch />}
+              element={<Home />}
             />
             <Route
               path='/stopwatch'
