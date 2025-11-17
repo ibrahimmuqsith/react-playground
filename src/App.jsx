@@ -1,8 +1,9 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 
 import './App.css'
 import Stopwatch from './components/Stopwatch'
-import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
 
 function App() {
 
@@ -10,8 +11,9 @@ function App() {
 
   return (
     <>
-      <head className='w-full'>
-      </head>
+      <section className='w-full'>
+        <Header />
+      </section>
       <section className='w-full flex'>
         <aside className='w-1/4'>
           HI
