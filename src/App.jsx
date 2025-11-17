@@ -2,6 +2,7 @@ import React from 'react'
 
 import './App.css'
 import Stopwatch from './components/Stopwatch'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
 
@@ -9,25 +10,27 @@ function App() {
 
   return (
     <>
-      <header>
-        <nav>
-          {document.cookie}
-        </nav>
-      </header>
-
-      <main>
-        <aside className=''>
-
+      <head className='w-full'>
+      </head>
+      <section className='w-full flex'>
+        <aside className='w-1/4'>
+          HI
         </aside>
-
-        <section className=''>
-          <Stopwatch />
+        <section className='w-3/4'>
+          <Routes>
+            <Route
+              path='/'
+              element={<Stopwatch />}
+            />
+            <Route
+              path='/stopwatch'
+              element={<Stopwatch />}
+            />
+          </Routes>
         </section>
-
-      </main>
-
-      <footer></footer>
+      </section>
     </>
+
   )
 }
 
