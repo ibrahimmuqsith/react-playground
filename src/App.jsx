@@ -6,6 +6,7 @@ import Stopwatch from './components/Stopwatch'
 import Header from './components/Header'
 import Home from './components/Home'
 import NavBar from './components/NavBar'
+import TodoList from './components/TodoList'
 
 function App() {
 
@@ -25,6 +26,10 @@ function App() {
             <Route
               path='/'
               element={<Home />}
+            />
+            <Route
+              path='/todolist'
+              element={<TodoList />}
             />
             <Route
               path='/stopwatch'
