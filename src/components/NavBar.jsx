@@ -9,7 +9,7 @@ const NavBar = () => {
             {NAV_LIST.map(item => (
                 <div className="w-full p-2 m-2 border-2 rounded-2xl bg-amber-100 cursor-pointer">
                     <Link
-                        className="w-full"
+                        className="w-full py-2.5 px-25"
                         to={item.path}
                     >
                         {item.navItem}
