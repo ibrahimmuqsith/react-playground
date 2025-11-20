@@ -8,6 +8,7 @@ import Home from './components/Home'
 import NavBar from './components/NavBar'
 import TodoList from './components/TodoList'
 import Carousel from './components/Carousel'
+import Quiz from './components/Quiz'
 
 function App() {
 
@@ -39,6 +40,10 @@ function App() {
             <Route
               path='/carousel'
               element={<Carousel />}
+            />
+            <Route
+              path='quiz'
+              element={<Quiz />}
             />
           </Routes>
         </section>

@@ -30,4 +30,36 @@ export const NAV_LIST = [
         navItem: 'Carousel',
         path: '/carousel'
     },
+    {
+        id: 4,
+        navItem: 'Quiz',
+        path: '/quiz'
+    },
+]
+
+export const QUIZ = [
+    {
+        id: 0,
+        question: "What is the capital of India?",
+        options: ["Berlin", "Madrid", "Delhi", "Rome"],
+        answer: "Delhi"
+    },
+    {
+        id: 1,
+        question: "What is 2 + 2?",
+        options: ["3", "4", "5", "6"],
+        answer: "4"
+    },
+    {
+        id: 3,
+        question: "Who is the Father of Nation?",
+        options: ["Mahatma Gandhi", "Jawaharlal Nehru", "Subhas Chandra Bose", "Ashfaq Ali"],
+        answer: "Mahatma Gandhi"
+    },
+    {
+        id: 4,
+        question: "What is the boiling point of water?",
+        options: ["100 deg C", "50 deg C", "110 deg C", "None of the above"],
+        answer: "100 deg C"
+    },
 ]
