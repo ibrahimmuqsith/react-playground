@@ -8,7 +8,6 @@ const Quiz = () => {
     const [finished, setFinished] = useState(false)
 
     const handleOptionClick = (ans) => {
-        console.log(ans, QUIZ[currentId].answer)
         if (ans === QUIZ[currentId].answer) {
             setScore(score + 1)
         }
