@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import NavBar from './components/NavBar'
 import TodoList from './components/TodoList'
+import Carousel from './components/Carousel'
 
 function App() {
 
@@ -34,6 +35,10 @@ function App() {
             <Route
               path='/stopwatch'
               element={<Stopwatch />}
+            />
+            <Route
+              path='/carousel'
+              element={<Carousel />}
             />
           </Routes>
         </section>
