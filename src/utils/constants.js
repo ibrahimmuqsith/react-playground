@@ -35,6 +35,11 @@ export const NAV_LIST = [
         navItem: 'Quiz',
         path: '/quiz'
     },
+    {
+        id: 5,
+        navItem: 'Form Validition',
+        path: '/formvalidation',
+    }
 ]
 
 export const QUIZ = [

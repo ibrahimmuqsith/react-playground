@@ -9,6 +9,7 @@ import NavBar from './components/NavBar'
 import TodoList from './components/TodoList'
 import Carousel from './components/Carousel'
 import Quiz from './components/Quiz'
+import FormValidation from './components/FormValidation'
 
 function App() {
 
@@ -20,10 +21,10 @@ function App() {
         <Header />
       </section>
       <section className='w-full flex'>
-        <aside className='w-80'>
+        <aside className='w-80 m-2'>
           <NavBar />
         </aside>
-        <section className='w-3/4 border-2 p-2 m-5 min-h-full'>
+        <section className='w-3/4 border-2 p-2 m-2 min-h-full'>
           <Routes>
             <Route
               path='/'
@@ -44,6 +45,10 @@ function App() {
             <Route
               path='quiz'
               element={<Quiz />}
+            />
+            <Route
+              path='/formvalidation'
+              element={<FormValidation />}
             />
           </Routes>
         </section>
