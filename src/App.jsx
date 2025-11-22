@@ -10,6 +10,7 @@ import TodoList from './components/TodoList'
 import Carousel from './components/Carousel'
 import Quiz from './components/Quiz'
 import FormValidation from './components/FormValidation'
+import Counter from './components/Counter'
 
 function App() {
 
@@ -49,6 +50,10 @@ function App() {
             <Route
               path='/formvalidation'
               element={<FormValidation />}
+            />
+            <Route
+              path='/counter'
+              element={<Counter />}
             />
           </Routes>
         </section>

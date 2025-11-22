@@ -39,6 +39,11 @@ export const NAV_LIST = [
         id: 5,
         navItem: 'Form Validition',
         path: '/formvalidation',
+    },
+    {
+        id: 6,
+        navItem: 'Counter',
+        path: '/counter'
     }
 ]
 
