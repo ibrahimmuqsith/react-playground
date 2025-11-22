@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { UPPERCASE_CHARS, LOWERCASE_CHARS, NUMBERS, SYMBOLS } from "../utils/constants";
 
 const PasswordGenerator = () => {
@@ -6,17 +6,8 @@ const PasswordGenerator = () => {
     const [includeLowerCase, setIncludeLowerCase] = useState(false)
     const [includeNumbers, setIncludeNumbers] = useState(false)
     const [includeSymbols, setIncludeSymbols] = useState(false)
-    const [passwordLength, setPasswordLength] = useState(undefined)
+    const [passwordLength, setPasswordLength] = useState(6)
     const [password, setPassword] = useState()
-
-    useEffect(() => {
-        if (password !== '') {
-            setIncludeLowerCase(false)
-            setIncludeUpperCase(false)
-            setIncludeSymbols(false)
-            setPasswordLength()
-        }
-    }, [password])
 
     const generatePassword = () => {
         let pool = '', randomString = ''
@@ -39,6 +30,11 @@ const PasswordGenerator = () => {
         }
         console.log(randomString)
         setPassword(randomString)
+    }
+
+    let disableSubmit
+    if ((passwordLength < 4) || (!includeUpperCase && !includeLowerCase && !includeNumbers && !includeSymbols)) {
+        disableSubmit = true
     }
 
     return (
@@ -89,11 +85,17 @@ const PasswordGenerator = () => {
 
                 <button
                     type="button"
+                    disabled={disableSubmit}
                     onClick={() => { generatePassword() }}
-                    className="border rounded p-4 m-4 bg-pink-200 cursor-pointer"
+                    className={disableSubmit ? 'border rounded p-4 m-4 bg-gray-200 cursor-not-allowed' : "border rounded p-4 m-4 bg-pink-200 cursor-pointer"}
                 >
                     Generate Password
                 </button>
+                {disableSubmit &&
+                    <p className="text-xs text-red-400">
+                        Password length should be min 6 & atleaset one type of characters
+                    </p>
+                }
             </div>
             <div className="mt-12">
                 <p>
