@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { UPPERCASE_CHARS, LOWERCASE_CHARS, NUMBERS, SYMBOLS } from "../utils/constants";
 
 const PasswordGenerator = () => {
+    const [copyMsg, setCopyMsg] = useState('Copy to Clipboard')
     const [includeUpperCase, setIncludeUpperCase] = useState(false)
     const [includeLowerCase, setIncludeLowerCase] = useState(false)
     const [includeNumbers, setIncludeNumbers] = useState(false)
@@ -30,6 +31,18 @@ const PasswordGenerator = () => {
         }
         console.log(randomString)
         setPassword(randomString)
+    }
+
+    const copyToClipboard = async () => {
+        try {
+            await navigator.clipboard.writeText(password)
+            setCopyMsg('Copied !!')
+            setTimeout(() => {
+                setCopyMsg('Copy to Clipboard')
+            }, 1000)
+        } catch (err) {
+            console.error(err)
+        }
     }
 
     let disableSubmit
@@ -107,9 +120,10 @@ const PasswordGenerator = () => {
 
                 <button
                     type="button"
-                    className="border rounded p-2 m-4 bg-pink-200 cursor-pointer"
+                    onClick={() => copyToClipboard()}
+                    className="border rounded p-2 m-4 bg-pink-200 cursor-pointer min-w-40 w-40"
                 >
-                    Copy to Clipboard
+                    {copyMsg}
                 </button>
             </div>
         </div>
