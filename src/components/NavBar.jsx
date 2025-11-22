@@ -12,7 +12,7 @@ const NavBar = () => {
                     key={item.id}
                 >
                     <Link
-                        className="py-2.5 px-22"
+                        className="py-2.5 px-18"
                         to={item.path}
                     >
                         {item.navItem}

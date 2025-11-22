@@ -13,6 +13,7 @@ import FormValidation from './components/FormValidation'
 import Counter from './components/Counter'
 import WordCount from './components/WordCount'
 import QuoteGenerator from './components/QuoteGenerator'
+import PasswordGenerator from './components/PasswordGenerator'
 
 function App() {
 
@@ -64,6 +65,10 @@ function App() {
             <Route
               path='quotegenerator'
               element={<QuoteGenerator />}
+            />
+            <Route
+              path='passwordgenerator'
+              element={<PasswordGenerator />}
             />
           </Routes>
         </section>

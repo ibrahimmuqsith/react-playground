@@ -48,12 +48,17 @@ export const NAV_LIST = [
     {
         id: 7,
         navItem: 'Word Count',
-        path: 'wordcount'
+        path: '/wordcount'
     },
     {
         id: 8,
         navItem: 'Quote Generator',
-        path: 'quotegenerator'
+        path: '/quotegenerator'
+    },
+    {
+        id: 9,
+        navItem: 'Password Generator',
+        path: '/passwordgenerator'
     },
 ]
 
@@ -83,3 +88,8 @@ export const QUIZ = [
         answer: "100 deg C"
     },
 ]
+
+export const UPPERCASE_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+export const LOWERCASE_CHARS = 'abcdefghijklmnopqrstuvwxyz'
+export const NUMBERS = '0123456789'
+export const SYMBOLS = '@#$%^&*()_+-=[]{}|;:,.<>?'
