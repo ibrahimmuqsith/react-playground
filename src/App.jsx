@@ -12,6 +12,7 @@ import Quiz from './components/Quiz'
 import FormValidation from './components/FormValidation'
 import Counter from './components/Counter'
 import WordCount from './components/WordCount'
+import QuoteGenerator from './components/QuoteGenerator'
 
 function App() {
 
@@ -59,6 +60,10 @@ function App() {
             <Route
               path='/wordcount'
               element={<WordCount />}
+            />
+            <Route
+              path='quotegenerator'
+              element={<QuoteGenerator />}
             />
           </Routes>
         </section>

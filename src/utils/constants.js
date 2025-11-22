@@ -50,6 +50,11 @@ export const NAV_LIST = [
         navItem: 'Word Count',
         path: 'wordcount'
     },
+    {
+        id: 8,
+        navItem: 'Quote Generator',
+        path: 'quotegenerator'
+    },
 ]
 
 export const QUIZ = [
