@@ -44,7 +44,12 @@ export const NAV_LIST = [
         id: 6,
         navItem: 'Counter',
         path: '/counter'
-    }
+    },
+    {
+        id: 7,
+        navItem: 'Word Count',
+        path: 'wordcount'
+    },
 ]
 
 export const QUIZ = [

@@ -11,6 +11,7 @@ import Carousel from './components/Carousel'
 import Quiz from './components/Quiz'
 import FormValidation from './components/FormValidation'
 import Counter from './components/Counter'
+import WordCount from './components/WordCount'
 
 function App() {
 
@@ -54,6 +55,10 @@ function App() {
             <Route
               path='/counter'
               element={<Counter />}
+            />
+            <Route
+              path='/wordcount'
+              element={<WordCount />}
             />
           </Routes>
         </section>
