@@ -14,6 +14,7 @@ import Counter from './components/Counter'
 import WordCount from './components/WordCount'
 import QuoteGenerator from './components/QuoteGenerator'
 import PasswordGenerator from './components/PasswordGenerator'
+import BmiCalculator from './components/BmiCalculator'
 
 function App() {
 
@@ -47,7 +48,7 @@ function App() {
               element={<Carousel />}
             />
             <Route
-              path='quiz'
+              path='/quiz'
               element={<Quiz />}
             />
             <Route
@@ -63,12 +64,16 @@ function App() {
               element={<WordCount />}
             />
             <Route
-              path='quotegenerator'
+              path='/quotegenerator'
               element={<QuoteGenerator />}
             />
             <Route
-              path='passwordgenerator'
+              path='/passwordgenerator'
               element={<PasswordGenerator />}
+            />
+            <Route
+              path='/bmicalculator'
+              element={<BmiCalculator />}
             />
           </Routes>
         </section>

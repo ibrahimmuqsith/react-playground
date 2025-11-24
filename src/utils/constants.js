@@ -60,6 +60,11 @@ export const NAV_LIST = [
         navItem: 'Password Generator',
         path: '/passwordgenerator'
     },
+    {
+        id: 10,
+        navItem: 'BMI Calculator',
+        path: '/bmicalculator'
+    },
 ]
 
 export const QUIZ = [
