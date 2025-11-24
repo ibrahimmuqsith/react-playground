@@ -2,7 +2,7 @@ import { createContext } from "react";
 
 
 const HeaderNameContext = createContext({
-    headerName: ''
+    headerName: 'Home'
 })
 
 export default HeaderNameContext
