@@ -4,6 +4,8 @@ export const ENDPOINT_PROFILE_GITHUB = "https://api.github.com/users/ibrahimmuqs
 
 export const ENDPOINT_WEATHER_DATA = 'https://api.openweathermap.org/data/2.5/weather?q='
 
+export const ENDPOINT_WEATHER_ICON = 'https://openweathermap.org/img/wn/'
+
 export const CAROUSEL_IMAGES = [
     'https://crafter.fastenal.com/static-assets/images/fcom/2024/homepage/illuminate-solutions-new-adjusted-copy2.webp',
     'https://crafter.fastenal.com/static-assets/images/fcom/2024/homepage/illuminate-fmi-tech-adjusted-copy.webp',
