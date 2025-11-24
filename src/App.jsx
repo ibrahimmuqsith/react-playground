@@ -16,6 +16,7 @@ import QuoteGenerator from './components/QuoteGenerator'
 import PasswordGenerator from './components/PasswordGenerator'
 import BmiCalculator from './components/BmiCalculator'
 import HeaderNameContext from './utils/HeaderNameContext'
+import WeatherApp from './components/WeatherApp'
 
 function App() {
 
@@ -77,6 +78,10 @@ function App() {
               <Route
                 path='/bmicalculator'
                 element={<BmiCalculator />}
+              />
+              <Route
+                path='/weatherapp'
+                element={<WeatherApp />}
               />
             </Routes>
           </section>

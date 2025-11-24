@@ -2,6 +2,8 @@ export const URL_PROFILE_LINKEDIN = "https://www.linkedin.com/in/muqsith-ibrahim
 
 export const ENDPOINT_PROFILE_GITHUB = "https://api.github.com/users/ibrahimmuqsith"
 
+export const ENDPOINT_WEATHER_DATA = 'https://api.openweathermap.org/data/2.5/weather?q='
+
 export const CAROUSEL_IMAGES = [
     'https://crafter.fastenal.com/static-assets/images/fcom/2024/homepage/illuminate-solutions-new-adjusted-copy2.webp',
     'https://crafter.fastenal.com/static-assets/images/fcom/2024/homepage/illuminate-fmi-tech-adjusted-copy.webp',
@@ -64,6 +66,11 @@ export const NAV_LIST = [
         id: 10,
         navItem: 'BMI Calculator',
         path: '/bmicalculator'
+    },
+    {
+        id: 11,
+        navItem: 'Weather App',
+        path: '/Weatherapp'
     },
 ]
 
