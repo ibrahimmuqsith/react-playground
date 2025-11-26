@@ -65,7 +65,7 @@ const Home = () => {
                 </p>
             </div>
             <img
-                className="w-60"
+                className=""
                 src={avatar_url}
                 alt="avtr"
             >

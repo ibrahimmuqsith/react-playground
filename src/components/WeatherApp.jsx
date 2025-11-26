@@ -51,7 +51,11 @@ const WeatherApp = () => {
                         </button>
                     </div>
                     {error
-                        ? <p className="text-4xl mt-12"> Oops!! <br /> Please choose another City. </p>
+                        ? <p className="text-4xl mt-12 text-center">
+                            Please choose another City <br />
+                            or <br />
+                            Check API keys in .env config
+                        </p>
                         : <WeatherCard
                             city={city}
                             weatherData={weatherData}
