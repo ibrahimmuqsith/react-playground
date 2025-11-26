@@ -17,6 +17,7 @@ import PasswordGenerator from './components/PasswordGenerator'
 import BmiCalculator from './components/BmiCalculator'
 import HeaderNameContext from './utils/HeaderNameContext'
 import WeatherApp from './components/WeatherApp'
+import Typeahead from './components/Typeahead'
 
 function App() {
 
@@ -82,6 +83,10 @@ function App() {
               <Route
                 path='/weatherapp'
                 element={<WeatherApp />}
+              />
+              <Route
+                path='/typeahead'
+                element={<Typeahead />}
               />
             </Routes>
           </section>

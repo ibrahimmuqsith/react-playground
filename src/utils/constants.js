@@ -1,3 +1,5 @@
+export const LIMIT_PRODUCTS_LIST = 10
+
 export const URL_PROFILE_LINKEDIN = "https://www.linkedin.com/in/muqsith-ibrahim/"
 
 export const ENDPOINT_PROFILE_GITHUB = "https://api.github.com/users/ibrahimmuqsith"
@@ -5,6 +7,8 @@ export const ENDPOINT_PROFILE_GITHUB = "https://api.github.com/users/ibrahimmuqs
 export const ENDPOINT_WEATHER_DATA = 'https://api.openweathermap.org/data/2.5/weather?q='
 
 export const ENDPOINT_WEATHER_ICON = 'https://openweathermap.org/img/wn/'
+
+export const ENDPOINT_PRODUCTS_LIST = 'https://dummyjson.com/products/search?q='
 
 export const CAROUSEL_IMAGES = [
     'https://crafter.fastenal.com/static-assets/images/fcom/2024/homepage/illuminate-solutions-new-adjusted-copy2.webp',
@@ -73,6 +77,11 @@ export const NAV_LIST = [
         id: 11,
         navItem: 'Weather App',
         path: '/Weatherapp'
+    },
+    {
+        id: 12,
+        navItem: 'Typeahead Search',
+        path: '/typeahead'
     },
 ]
 
